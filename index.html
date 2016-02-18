@@ -35,21 +35,69 @@
         <div class="layout_inner">
             <div class="content">
                 <h1 class="name">Fabricio Panhan Costa</h1>
-                <h2 class="job">Desenvolvedor de <span>Software</span></h2>
-                <div class="work"><span>Resultados</span> superiores sem surpresas.</div>
-                <div class="clients">Trabalhos: <a href="http://delegadoanonimo.github.io" target="blank">Delegado Anônimo</a>, <a href="http://sacramusic.com" target="blank">Sacramusic</a></div>
-                <div class="hire"><span><i class="fa fa-check"></i></span> Hirable.</div>
+                <h2 class="job"><span id="job">Desenvolvedor de Software</span></h2>
+                <div class="work"><span id="work">Resultados superiores sem surpresas.</span></div>
+                <div class="clients"><span id="clients">Trabalhos:</span> <a href="http://delegadoanonimo.github.io" target="blank">Delegado Anônimo</a>, <a href="http://sacramusic.com" target="blank">Sacramusic</a></div>
+                <div class="hire"><span><i class="fa fa-check"></i> Hirable.</span></div>
                 <ul>
                     <li><a href="http://twitter.com/fpanhan" title="Twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
                     <li><a href="http://github.com/fpanhan" title="GitHub"><i class="fa fa-github-alt"></i> GitHub</a></li>
                     <li><a href="https://medium.com/@fpanhan" title="Medium"><i class="fa fa-medium"></i> Medium</a></li>
                     <li><a href="https://www.linkedin.com/in/fpanhan" title="Linkedin"><i class="fa fa-linkedin"></i> Linkedin</a></li>
                     <li><a href="skype:fpanhan?chat" title="Skype"><i class="fa fa-skype"></i> Skype</a></li>
-                    <li><a href="mailto:fpanhan@hotmail.com" title="E-mail"><i class="fa fa-envelope-o"></i> E-mail</a></li>
+                    <li><a href="mailto:fabricio.panhan@gmail.com" title="E-mail"><i class="fa fa-envelope-o"></i> E-mail</a></li>
                 </ul>
+                <div class="lang_selector">
+                    <ul>
+                        <li><a href="http://fpanhan.com/?l=en"><img src="content/flags/en.png" alt="en"> English</a></li>
+                        <li><a href="http://fpanhan.com/?l=es"><img src="content/flags/es.png" alt="es"> Español</a></li>
+                        <li><a href="http://fpanhan.com/?l=fr"><img src="content/flags/fr.png" alt="fr"> Français</a></li>
+                        <li><a href="http://fpanhan.com/?l=pt-br"><img src="content/flags/pt-br.png" alt="pt-br"> Português</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <script>(function (i, s, o, g, r, a, m) { i["GoogleAnalyticsObject"] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); ga("create", "UA-73901372-1", "auto"); ga("send", "pageview");</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var langSelector = getUrlParameter("l");
+            langSelector = (langSelector == "" ? "pt-br" : langSelector);
+            switch (langSelector) {
+                case "pt-br":
+                    $("#job").text("Desenvolvedor de Software");
+                    $("#work").text("Resultados superiores sem surpresas.");
+                    $("#clients").text("Trabalhos:");
+                    break;
+                case "en":
+                    $("#job").text("Software Developer");
+                    $("#work").text("Superior results without surprises.");
+                    $("#clients").text("Works:");
+                    break;
+                case "es":
+                    $("#job").text("Desarrollador de software");
+                    $("#work").text("Resultados superiores sin sorpresa.");
+                    $("#clients").text("Trabajos:");
+                    break;
+                case "fr":
+                    $("#job").text("Développeur de logiciels");
+                    $("#work").text("Des résultats supérieurs sans surprises.");
+                    $("#clients").text("Travaux:");
+                    break;
+            }
+        });
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)), sURLVariables = sPageURL.split("&"), sParameterName, i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split("=");
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+        (function (i, s, o, g, r, a, m) { i["GoogleAnalyticsObject"] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); ga("create", "UA-73901372-1", "auto"); ga("send", "pageview");
+    </script>
 </body>
 </html>
