@@ -81,7 +81,7 @@
     <script>
         $(document).ready(function () {
             var langSelector = getUrlParameter("l");
-            langSelector = (langSelector == "" ? "pt-br" : langSelector);
+            langSelector = (langSelector !== undefined ? langSelector : "pt-br");
             switch (langSelector) {
                 case "pt-br":
                     $("#job").text("Desenvolvedor de Software");
