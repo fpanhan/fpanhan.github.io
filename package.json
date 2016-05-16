@@ -1,0 +1,20 @@
+{
+  "name": "fabricio-panhan",
+  "version": "0.0.1",
+  "description": "Fabricio Panhan Costa personal website",
+  "homepage": "http://fpanhan.com.br",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/fpanhan/fpanhan.github.io"
+  },
+  "dependencies": {
+    "grunt-cli": "0.1.6",
+    "grunt": "~0.4.0",
+    "grunt-yui-compressor": "0.2.1",
+    "grunt-htmlcompressor": "~0.1.8",
+    "grunt-rsync": "~0.1.0"
+  },
+  "devDependencies": {
+    "grunt-uncss": "~0.1.3"
+  }
+}
