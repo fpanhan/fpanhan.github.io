@@ -19,6 +19,11 @@ a {
         border-bottom-color: transparent;
     }
 
+hr {
+    width: 600px;
+    border: 1px dashed #4f4f4f;
+}
+
 .layout, .layout_inner {
     display: table;
     width: 100%;
