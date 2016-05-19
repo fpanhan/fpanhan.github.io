@@ -1,6 +1,11 @@
 # This .htaccess file is used to speed up this website
 # See http://fpanhan.com.br/.htaccess
 
+RewriteCond %{HTTP_HOST} ^192\.30\.252\.153
+RewriteRule (.*) http://fpanhan.com.br/$1 [R=301,L]
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteRule .* ? [F,L]
+
 # compress text, html, javascript, css, xml:
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
