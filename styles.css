@@ -47,6 +47,12 @@ hr {
         background: url(profile.png) no-repeat;
     }
 
+.notfound {
+    display: table-cell;
+    padding: 30px;
+    text-align: center;
+}
+
 .hire_text:after, .job:after {
     content: "";
     display: block;
