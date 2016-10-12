@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2016-10-12:v1
+
+CACHE:
+http://fpanhan.com.br/index.html
+http://fpanhan.com.br/favicon.ico
+http://fpanhan.com.br/styles.min.css
+http://fpanhan.com.br/content/*
+
+NETWORK:
+*
