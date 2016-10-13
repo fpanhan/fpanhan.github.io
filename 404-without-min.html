@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang="pt-br" manifest="http://fpanhan.com.br/manifest.appcache" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
 <head>
-    <title>Fabricio Panhan Costa. Desenvolvedor de Software.</title>
+    <title>404 Página não encotrada. Fabricio Panhan Costa. Desenvolvedor de Software.</title>
     <meta name="robots" content="all,follow" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -103,9 +103,7 @@
         }
     </style>
     <link rel="manifest" href="manifest.json" />
-    <script>!function (n) { window.onload = function () { n.documentElement.className += " app-loaded" } }(document);</script>
-    <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <script>!function (n) { window.onload = function () { n.documentElement.className += " app-loaded" } }(document);</script><!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body>
     <noscript><div id="NotificationNoScript"><p>Você precisa ter o javascript habilitado para visualizar esse site.</p><p>You must have javascript enabled in order to properly view this website.</p></div></noscript>
@@ -113,23 +111,11 @@
         {"@context":"http://schema.org","@type":"Organization","name":"fpanhan","url":"http://fpanhan.com.br","sameAs":["https://github.com/fpanhan","https://twitter.com/fpanhan","https://www.facebook.com/fpanhan","https://plus.google.com/+FabricioPanhan","https://medium.com/@fpanhan","https://www.linkedin.com/in/fpanhan"]}
     </script>
     <div class="layout">
-        <div class="layout_inner">
+        <div class="notfound">
             <div class="content">
-                <h1 class="name">Fabricio Panhan Costa</h1>
-                <h2 class="job"><span id="job">Desenvolvedor de Software</span></h2>
-                <div class="work"><span id="work">Resultados superiores sem surpresas.</span></div><div class="clients">
-                    <span id="clients">Trabalhos: </span><a href="http://delegadoanonimo.github.io" target="blank">Delegado Anônimo</a>, <a href="http://sacramusic.com" target="blank">Sacramusic</a>
-                </div>
-                <div class="hire"><span><i class="fa fa-check"></i> Hirable.</span></div>
-                <div class="hire_text"><span id="hire">Estou disponível para contratação, consultoria, e desenvolvimento de software com equipes apaixonadas.</span></div>
-                <ul>
-                    <li><a href="https://twitter.com/fpanhan" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
-                    <li><a href="https://github.com/fpanhan" title="GitHub"><i class="fa fa-github-alt fa-2x"></i></a></li>
-                    <li><a href="https://medium.com/@fpanhan" title="Medium"><i class="fa fa-medium fa-2x"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/fpanhan" title="Linkedin"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                    <li><a href="skype:fpanhan?chat" title="Skype"><i class="fa fa-skype fa-2x"></i></a></li>
-                    <li><a href="mailto:fabricio.panhan@gmail.com" title="E-mail"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-                </ul><br />
+                <h1 class="name">404 Página não encotrada.</h1> <div>
+                    <a href="/"><img src="suricato.jpg" alt="Suricato" title="Suricato" /></a>
+                </div><h2 class="job">Não se preocupe. Você pode voltar para a <a href="/"> homepage</a>.</h2>
             </div>
             <footer>
                 <div class="container">
@@ -155,31 +141,6 @@
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var e = getUrlParameter("l");
-            switch (e = void 0 !== e ? e : "pt-br") {
-                case "pt-br": $("#job").text("Desenvolvedor de Software"), $("#work").text("Resultados superiores sem surpresas."), $("#clients").text("Trabalhos:"), $("#hire").text("Estou disponível para contratação, consultoria, e desenvolvimento de software com equipes apaixonadas.");
-                    break;
-                case "en": $("#job").text("Software Developer"), $("#work").text("Superior results without surprises."), $("#clients").text("Works:"), $("#hire").text("I am available for hire to consult, advise, and develop software with passionate teams.");
-                    break;
-                case "es": $("#job").text("Desarrollador de software"), $("#work").text("Resultados superiores sin sorpresa."), $("#clients").text("Trabajos:"), $("#hire").text("Estoy disponible para alquiler a consultar, asesorar y desarrollar con los equipos apasionados.");
-                    break;
-                case "fr": $("#job").text("Développeur de logiciels"), $("#work").text("Des résultats supérieurs sans surprises."), $("#clients").text("Travaux:"), $("#hire").text("Je suis disponible pour la location de consulter, conseiller, et développer avec les équipes passionnées.")
-            }
-        });
-        var getUrlParameter = function (e) {
-            var t, s, a = decodeURIComponent(window.location.search.substring(1)), o = a.split("&");
-            for (s = 0;
-            s < o.length;
-            s++) if (t = o[s].split("="), t[0] === e) return void 0 === t[1] ? !0 : t[1]
-        };
-        !function (e, t, s, a, o, r, i) {
-            e.GoogleAnalyticsObject = o, e[o] = e[o] || function () {
-                (e[o].q = e[o].q || []).push(arguments)
-            }, e[o].l = 1 * new Date, r = t.createElement(s), i = t.getElementsByTagName(s)[0], r.async = 1, r.src = a, i.parentNode.insertBefore(r, i)
-        }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
-        ga("create", "UA-73901372-1", "auto"), ga("send", "pageview");
-    </script>
+    <script>var getUrlParameter = function (e) { var t, s, a = decodeURIComponent(window.location.search.substring(1)), o = a.split("&"); for (s = 0; s < o.length; s++) if (t = o[s].split("="), t[0] === e) return void 0 === t[1] ? !0 : t[1] }; !function (e, t, s, a, o, r, i) { e.GoogleAnalyticsObject = o, e[o] = e[o] || function () { (e[o].q = e[o].q || []).push(arguments) }, e[o].l = 1 * new Date, r = t.createElement(s), i = t.getElementsByTagName(s)[0], r.async = 1, r.src = a, i.parentNode.insertBefore(r, i) }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"), ga("create", "UA-73901372-1", "auto"), ga("send", "pageview"); </script>
 </body>
 </html>
