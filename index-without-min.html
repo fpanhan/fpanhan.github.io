@@ -156,30 +156,34 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function () {
-            var e = getUrlParameter("l");
-            switch (e = void 0 !== e ? e : "pt-br") {
-                case "pt-br": $("#job").text("Desenvolvedor de Software"), $("#work").text("Resultados superiores sem surpresas."), $("#clients").text("Trabalhos:"), $("#hire").text("Estou disponível para contratação, consultoria, e desenvolvimento de software com equipes apaixonadas.");
-                    break;
-                case "en": $("#job").text("Software Developer"), $("#work").text("Superior results without surprises."), $("#clients").text("Works:"), $("#hire").text("I am available for hire to consult, advise, and develop software with passionate teams.");
-                    break;
-                case "es": $("#job").text("Desarrollador de software"), $("#work").text("Resultados superiores sin sorpresa."), $("#clients").text("Trabajos:"), $("#hire").text("Estoy disponible para alquiler a consultar, asesorar y desarrollar con los equipos apasionados.");
-                    break;
-                case "fr": $("#job").text("Développeur de logiciels"), $("#work").text("Des résultats supérieurs sans surprises."), $("#clients").text("Travaux:"), $("#hire").text("Je suis disponible pour la location de consulter, conseiller, et développer avec les équipes passionnées.")
-            }
+        $(document).ready(function() {
+        var e = getUrlParameter("l");
+        switch (e = void 0 !== e ? e : "pt-br") {
+            case "pt-br":
+            $("#job").text("Desenvolvedor de Software"), $("#work").text("Resultados superiores sem surpresas."), $("#clients").text("Trabalhos:"), $("#hire").text("Estou disponível para contratação, consultoria, e desenvolvimento de software com equipes apaixonadas.");
+            break;
+            case "en":
+            $("#job").text("Software Developer"), $("#work").text("Superior results without surprises."), $("#clients").text("Works:"), $("#hire").text("I am available for hire to consult, advise, and develop software with passionate teams.");
+            break;
+            case "es":
+            $("#job").text("Desarrollador de software"), $("#work").text("Resultados superiores sin sorpresa."), $("#clients").text("Trabajos:"), $("#hire").text("Estoy disponible para alquiler a consultar, asesorar y desarrollar con los equipos apasionados.");
+            break;
+            case "fr":
+            $("#job").text("Développeur de logiciels"), $("#work").text("Des résultats supérieurs sans surprises."), $("#clients").text("Travaux:"), $("#hire").text("Je suis disponible pour la location de consulter, conseiller, et développer avec les équipes passionnées.")
+        }
         });
-        var getUrlParameter = function (e) {
-            var t, s, a = decodeURIComponent(window.location.search.substring(1)), o = a.split("&");
-            for (s = 0;
-            s < o.length;
-            s++) if (t = o[s].split("="), t[0] === e) return void 0 === t[1] ? !0 : t[1]
+        var getUrlParameter = function(e) {
+        var t, s, a = decodeURIComponent(window.location.search.substring(1)),
+            o = a.split("&");
+        for (s = 0; s < o.length; s++)
+            if (t = o[s].split("="), t[0] === e) return void 0 === t[1] ? !0 : t[1]
         };
-        !function (e, t, s, a, o, r, i) {
-            e.GoogleAnalyticsObject = o, e[o] = e[o] || function () {
-                (e[o].q = e[o].q || []).push(arguments)
-            }, e[o].l = 1 * new Date, r = t.createElement(s), i = t.getElementsByTagName(s)[0], r.async = 1, r.src = a, i.parentNode.insertBefore(r, i)
+        ! function(e, t, s, a, o, r, i) {
+        e.GoogleAnalyticsObject = o, e[o] = e[o] || function() {
+            (e[o].q = e[o].q || []).push(arguments)
+        }, e[o].l = 1 * new Date, r = t.createElement(s), i = t.getElementsByTagName(s)[0], r.async = 1, r.src = a, i.parentNode.insertBefore(r, i)
         }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
         ga("create", "UA-73901372-1", "auto"), ga("send", "pageview");
-    </script>
+        < /script>
 </body>
 </html>
