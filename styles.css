@@ -51,7 +51,16 @@ hr {
         background: url(profile.png) no-repeat;
     }*/
 
-img.me {
+.author:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 26px;
+}
+
+.author img.me {
     content: "";
     position: relative;
     display: block;
@@ -146,7 +155,8 @@ img.me {
 }
 
 .content,
-.layout_inner:before {
+.layout_inner:before,
+.author:before {
     opacity: 0;
     -webkit-transform: translateY(-20px);
     -ms-transform: translateY(-20px);
