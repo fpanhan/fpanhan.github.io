@@ -51,7 +51,7 @@ hr {
         background: url(profile.png) no-repeat;
     }*/
 
-.author:before {
+.author {
     content: "";
     position: relative;
     display: block;
