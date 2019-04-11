@@ -2,6 +2,13 @@
 <html lang="pt-br" manifest="http://fpanhan.com.br/manifest.appcache" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
 <head>
     <title>Fabricio Panhan Costa. Desenvolvedor de Software.</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KJD9K8J');</script>
+    <!-- End Google Tag Manager -->
     <meta name="robots" content="all,follow"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -114,6 +121,7 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJD9K8J"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
     <noscript>
         <div id="NotificationNoScript">
             <p>Você precisa ter o javascript habilitado para visualizar esse site.</p>
@@ -190,6 +198,12 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
+        const today = new Date();
+        const birthday = new Date("1980/05/05");
+        const year = today.getFullYear();
+        const myAge = Math.floor(Math.abs(today - birthday) / 1000 / 60 / 60 / 24 / 365);
+        /*document.getElementById("age").innerHTML = myAge;*/
+
         $(document).ready(function () {
             var e = getUrlParameter("l");
             switch (e = void 0 !== e ? e : "pt-br") {
