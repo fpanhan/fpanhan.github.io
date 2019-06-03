@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="pt-br" manifest="http://fpanhan.com.br/manifest.appcache" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+<html lang="pt-br" manifest="http://fpanhan.com.br/manifest.appcache" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>404 Página não encontrada. Fabricio Panhan Costa. Desenvolvedor de Software.</title>
     <!-- Google Tag Manager -->
@@ -141,8 +141,8 @@
                             </div>
                             <div class="footer-copyright">
                                 <div class="container">
-                                    <i class="fa fa-code tiny"></i> with <span style="text-decoration:line-through;">love</span> <i class="fa fa-beer tiny" aria-hidden="true"></i> by Me
-                                    <!--<i class="fa fa-code tiny"></i> with <i class="fa fa-heart tiny"></i> and some <i class="fa fa-coffee tiny"></i> by Me-->
+                                    <i class="fa fa-code tiny"></i> with <span style="text-decoration:line-through;">love</span> <i class="fa fa-beer tiny" aria-hidden="true"></i> by Me<br />
+                                    &copy; <span id="year">2018</span>
                                 </div>
                             </div>
                         </div>
@@ -153,6 +153,9 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script>
+        $(document).ready(function () {
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        });
         var getUrlParameter = function (e) {
             var t, s, a = decodeURIComponent(window.location.search.substring(1)),
                 o = a.split("&");
@@ -166,6 +169,5 @@
         }(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"),
         ga("create", "UA-73901372-1", "auto"), ga("send", "pageview");
     </script>
-
 </body>
 </html>

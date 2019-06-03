@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="pt-br" manifest="http://fpanhan.com.br/manifest.appcache" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
+<html lang="pt-br" manifest="http://fpanhan.com.br/manifest.appcache" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Fabricio Panhan Costa. Desenvolvedor de Software.</title>
     <!-- Google Tag Manager -->
@@ -186,8 +186,8 @@
                             <div class="footer-copyright">
                                 <div class="container">
                                     <i class="fa fa-code tiny" title="code"></i> with
-                                    <span style="text-decoration:line-through;" aria-hidden="true">love</span> <i class="fa fa-beer tiny" title="beer"></i> by Me
-                                    <!--<i class="fa fa-code tiny"></i> with <i class="fa fa-heart tiny"></i> and some <i class="fa fa-coffee tiny"></i> by Me-->
+                                    <span style="text-decoration:line-through;" aria-hidden="true">love</span> <i class="fa fa-beer tiny" title="beer"></i> by Me<br />
+                                    &copy; <span id="year">2018</span>
                                 </div>
                             </div>
                         </div>
@@ -205,6 +205,7 @@
         /*document.getElementById("age").innerHTML = myAge;*/
 
         $(document).ready(function () {
+            document.getElementById("year").innerHTML = new Date().getFullYear();
             var e = getUrlParameter("l");
             switch (e = void 0 !== e ? e : "pt-br") {
                 case "pt-br":
