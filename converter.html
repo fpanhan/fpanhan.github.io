@@ -24,7 +24,9 @@
                 </div>
                 <input type="tel" id="phone" name="phone" class="form-control grupo_telefone" value="" minlength="13" maxlength="13" placeholder="Phone goes here..." size="48" autofocus="autofocus" required="required" /><br />
                 <textarea id="textToEncode" name="textToEncode" class="form-control" placeholder="Message goes here..." rows="10" cols="50" required="required"></textarea><br />
-                <input type="text" id="convertedText" name="convertedText" class="form-control" placeholder="Converted text goes here..." size="48" readonly="readonly" />
+                <input type="text" id="convertedText" name="convertedText" class="form-control" placeholder="Converted text goes here..." size="48" readonly="readonly" /><br />
+                <input type="text" id="convertedLink1" name="convertedLink1" class="form-control" placeholder="Converted link1 goes here..." size="48" readonly="readonly" /><br />
+                <input type="text" id="convertedLink2" name="convertedLink2" class="form-control" placeholder="Converted link2 goes here..." size="48" readonly="readonly" />
             </div>
         </form>
         <button type="button" id="convert" class="btn btn-light"><i class="fa fa-cogs tiny" title="Cogs"></i> Click here to encode</button>&nbsp;&nbsp;
@@ -65,6 +67,8 @@
             $("#convert").click(function () {
                 var txt = $("#textToEncode").val();
                 $("#convertedText").val(encodeURIComponent(txt));
+                $("#convertedLink1").val("https://api.whatsapp.com/send?phone=" + $("#phone").val() + "&text=" + encodeURIComponent(txt));
+                $("#convertedLink2").val("https://wa.me/" + $("#phone").val() + "?text=" + encodeURIComponent(txt));
             });
 
             $("#whatsAppMessage").click(function () {
@@ -94,7 +98,7 @@
                     phone: {
                         require_from_group: [1, ".grupo_telefone"],
                         required: "#choose:unchecked",
-                        minlength: 13
+                        minlength: 12
                     },
                     textToEncode: {
                         required: true,
@@ -104,7 +108,7 @@
                 messages: {
                     phone: {
                         required: "Please, inform the sending telephone",
-                        minlength: "Phone must follow standard 5511912345678 (13 numbers)"
+                        minlength: "Phone must follow standard 551112345678 (12 numbers)"
                     },
                     textToEncode: {
                         required: "It is necessary to inform the message",
