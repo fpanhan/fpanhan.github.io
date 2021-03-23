@@ -118,7 +118,7 @@ a:active {
             <div class="col text-center">
                 <p class="mt-5 mb-3 text-muted">
                     <i class="fa fa-code tiny" title="code"></i> with <span style="text-decoration:line-through;" aria-hidden="true">love</span> <i class="fa fa-beer tiny" title="beer"></i> by <a href="https://fpanhan.com.br">Me</a><br />
-                    &copy; 2021
+                    &copy; <span id="year">2021</span>
                 </p>
             </div>
         </div>
@@ -307,6 +307,7 @@ a:active {
         }
 
         $(document).ready(function () {
+            document.getElementById("year").innerHTML = new Date().getFullYear();
             $("#gerar").click(function () {
                 $("#geradoValidado").val(cpf($("#pontuacaoSim").is(":checked")));
             });

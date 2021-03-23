@@ -115,7 +115,7 @@
             <i class="fa fa-code tiny" title="code"></i> with <span style="text-decoration:line-through;"
                 aria-hidden="true">love</span> <i class="fa fa-beer tiny" title="beer"></i> by <a
                 href="https://fpanhan.com.br">Me</a><br />
-            &copy; 2021
+            &copy; <span id="year">2021</span>
         </p>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -139,6 +139,7 @@
         }
 
         $(document).ready(function () {
+            document.getElementById("year").innerHTML = new Date().getFullYear();
             $("#choose").on("click", function () {
                 if (!isMobile) {
                     alert("This option only works on mobile devices");
